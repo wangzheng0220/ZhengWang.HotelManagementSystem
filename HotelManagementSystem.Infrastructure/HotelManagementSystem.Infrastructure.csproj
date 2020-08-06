@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200806161126_IntialMigration.cs" />
+    <Compile Remove="Migrations\20200806161126_IntialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200806161609_IntialMigration.cs" />
+    <Compile Remove="Migrations\20200806161609_IntialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200806161754_IntialMigration.cs" />
+    <Compile Remove="Migrations\20200806161754_IntialMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200806163039_addCustomerTable.cs" />
+    <Compile Remove="Migrations\20200806163039_addCustomerTable.Designer.cs" />
+    <Compile Remove="Migrations\20200806163356_addServiceTable.cs" />
+    <Compile Remove="Migrations\20200806163356_addServiceTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelManagementSystem.Core\HotelManagementSystem.Core.csproj" />
+  </ItemGroup>
+
+</Project>
